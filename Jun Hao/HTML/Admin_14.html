@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Module Management</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+</style>
+<body>
+
+<p align = center style="font-size:130%"><b>Select the student(s) and module(s) to be unassigned.</b></p>
+
+<table id="StudentID" class="display" cellspacing="0" width="45%" style="float: left;">
+        <thead>
+            <tr>
+                <th></th>
+                <th><b>Student ID</b></th>
+                <th><b>Name</b></th>
+                <th><b>Age</b></th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>141407</td>
+                <td>Tan Ying Hao</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>142908</td>
+                <td>Wong Yijie</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>140711</td>
+                <td>Lim Xuan Yin</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+</table>
+
+
+<a href="default.asp">
+	<img src="arrow.png" alt="arrow" style="width:50px; margin-top: 65px; margin-left: 40px;">
+</a>
+
+
+<table id="ModuleID" class="display" cellspacing="0" width="45%" style="float: right;">
+        <thead>
+            <tr>
+                <th></th>
+                <th><b>Module ID</b></th>
+                <th><b>Module Name</b></th>
+            </tr>                                    
+        </thead>
+        <tbody style="text-align: center;">
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>L00001</td>
+                <td>English Language</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>L00002</td>
+                <td>Chinese Language</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>M00001</td>
+                <td>Mathematics</td>
+            </tr>
+        </tbody>
+</table>
+
+<p style="margin-top: 100px; margin-left: 1200px;">
+	<button type="button" onclick="">Unassign</button>
+</p>
+
+<script type="text/javascript">
+    function getRow(n) {
+        var row = n.parentNode.parentNode;
+        var cols = row.getElementsByTagName("td");
+        var i=0;
+        while (i < cols.length) {
+            alert(cols[i].textContent);
+            i++;
+        }
+    } 
+</script>
+
+</body>
+</html>

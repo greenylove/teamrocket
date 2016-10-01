@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Student Management</title>
+</head>
+<style>
+table, th, td {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+<body>
+
+<p style="float: right;font-size:130%"><b>Select a user to View or Manage.</b></p>
+
+<table id="ModuleID" class="display" cellspacing="0" width="30%" style="float: left; margin-top:70px">
+        <thead style="text-align: left;">
+            <tr>
+                <th></th>
+                <th><b>Teacher ID</b></th>
+                <th><b>Name</b></th>
+            </tr>                                    
+        </thead>
+        <tbody style="text-align: left;">
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>T00001</td>
+                <td>Ng Yao Sheng</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>T00002</td>
+                <td>Ang Sui Min</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" onclick="getRow(this)" /></td>
+                <td>T00003</td>
+                <td>Neo Jun Hao</td>
+            </tr>
+        </tbody>
+</table>
+
+<p style="float:right; margin-top: 250px">
+	<button type="button" onclick="">NEXT</button>
+</p>
+
+
+</body>
+</html>
