@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counsellor DR NIEASTRAK Profile</title>
+
+<style>
+@font-face {
+    font-family: KOZGOPR6N-BOLD;
+    src: url(KOZGOPR6N-BOLD.OTF);
+}
+
+@font-face {
+    font-family: ARIALNOVACOND-LIGHT;
+    src: url(ARIALNOVACOND-LIGHT.TTF);
+}
+@font-face {
+    font-family:SOURCESANSPRO-LIGHT;
+    src: url(SOURCESANSPRO-LIGHT.OTF);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline;
+    width: 60px;
+	margin: 8px;
+}
+li a{
+	font-weight:bold;
+	text-decoration:none;
+	padding: 10px;
+}
+
+/* unvisited link */
+li a:link {
+    color: black;
+}
+
+/* visited link */
+li a:visited {
+    color: black;
+}
+
+/* mouse over link */
+li a:hover {
+	border-radius: 7px;
+	background-color: #BFBFBF;
+}
+
+/* selected link */
+li a:active {
+    color: blue;
+}
+
+.inner {
+    width: 90%;
+    margin: 0px auto;
+	border-bottom: thin solid #000000;
+}
+
+.currentpage{
+	border-radius: 7px;
+	background-color: #BFBFBF;
+}
+
+.treatmentloglist {
+    width: 100%;
+    text-align: left;
+    margin: 10px auto 0px auto;
+    border-spacing: 10px 5px;
+    border-collapse: collapse;
+}
+
+.treatmentloglist tr {
+
+}
+
+.treatmentloglist tr th {
+	font-family:ARIALNOVACOND-LIGHT;
+	font-weight:bold;
+	font-size: 18px;
+}
+
+.treatmentloglist tr td {
+	font-family:SOURCESANSPRO-LIGHT;
+
+}
+
+.nextbutton {
+	font-family:KOZGOPR6N-BOLD;
+    border: solid thin black;
+	background:white;
+    color: #595959;
+    padding: 2px 10px;
+    text-align: center;
+    border-radius: 7px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+	float:right;
+}
+
+.studenttreatment{
+	font-family: KOZGOPR6N-BOLD;
+    color: #595959;
+    font-size: 20px;
+    margin: 20px auto 0px auto;
+    width: 90%;
+    text-align: center;
+}
+
+</style>
+
+</head>
+<body style="margin:0px">
+<div style="height:15%;background-color:#DEEBF7;">
+
+<div style="width:90%;margin: 0 auto;">
+<img src="Momento Logo.png" alt="Momento Logo" style="height:150px;margin:20px 0px -30px 80px">
+<div style="float:right;margin-top: 30px;">
+<div style="font-family:ARIALNOVACOND-LIGHT;font-size: 35px;margin-right: 30px;">DR NIEASTRAK</div>
+<div style="font-family:ARIALNOVACOND-LIGHT;font-size: 15px;margin-right: 30px;">STUDENT: TAN YING HAO</div>
+</div>
+</div>
+
+<div style="width:90%;margin: 0 auto;">
+&nbsp;
+<ul style="float:left;font-family:KOZGOPR6N-BOLD;">
+  <li><a href="">Logout</a></li>
+</ul>
+
+<ul style="float:right;font-family:KOZGOPR6N-BOLD;">
+  <li><a href="Counsellor_Homepage.html">Home</a></li>
+  <li><a href="Counsellor_view_list_of_students.html">Student Details</a></li>
+  <li><a href="Counsellor_view_student_journal_entry.html">Journal Entries</a></li>
+  <li><a href="Counsellor_view_student_detailed_metrics.html">Detailed Metrics</a></li>
+  <li><a class="currentpage" href="Counsellor_view_student_treatment_logs.html">Treatment Logs</a></li>
+</ul>
+</div>
+<div class="inner">&nbsp;</div>
+
+</div>
+
+<div style="width: 90%;margin: 0 auto;">
+
+
+<table class="treatmentloglist">
+<div class="studenttreatment">
+New Treatment Log
+</div>
+  <tr>
+    <th>Date: <input type="date" name="date">&nbsp;</th>
+	<th>Time: <input type="time" name="time">&nbsp;</th>	           
+	<th>Type: <input type="text" name="type">&nbsp;</th>	   	     
+  </tr>
+</table>
+<table class="treatmentloglist">
+<tr>
+	<th>Notes: <textarea name="notes" rows="50" cols="50" style="width:100%;height: 200px;"></textarea>&nbsp;</th>	   	     
+	</tr>
+</table>
+
+
+<a href="Counsellor_view_student_treatment_logs.html" class="nextbutton">Save</a>
+
+</div>
+
+
+</body>
+</html>
